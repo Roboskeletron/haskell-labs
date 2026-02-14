@@ -17,10 +17,7 @@ ch x n ap s c e
 
 sum x n = ch x n 1 1 1 0
 
-sumGrE x n e
-    | e > 1 = 0
-    | e == 1 = 1
-    | otherwise = ch x n 1 1 1 e
+sumGrE x n = ch x n 1 1 1
 
 sumGrE10 x n e = sumGrE x n (e / 10)  
 
